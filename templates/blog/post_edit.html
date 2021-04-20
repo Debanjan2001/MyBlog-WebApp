@@ -1,0 +1,57 @@
+
+{% extends 'base/base.html' %}
+
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block base %}
+
+  <div class="container">
+
+
+    <center><h1>New Post</h1></center>
+    <form method="POST">
+    {% csrf_token %}
+    {{ form.media }}
+
+    <div class="form-row">
+        <div class="form-group col-md-8 mb-0">
+            {{ form.title|as_crispy_field }}
+        </div>
+        
+        <div class="form-group col-md-4 mb-0">
+            {{ form.author|as_crispy_field }}
+        </div>
+    </div>
+    
+    <div class="form-row">
+            <div class="form-group col-md-12 mb-0">
+                {{ form.preview_image_url|as_crispy_field }}
+            </div>
+            
+
+    </div>
+
+   <div class="form-row">
+        <div class="form-group col-md-10 mb-0">
+            {{ form.text|as_crispy_field }}
+        </div>
+
+         <div class="form-group col-md-2 mb-0">
+            {{ form.preview_text|as_crispy_field }}
+            
+            <center>
+               <p><button type="submit" class=" btn btn-success" >Post</button></p>
+               <p><button href={% url 'blog:detail' post.pk %} class=" btn btn-danger" >Cancel</button></p>
+            </center>
+        </div>
+    </div>
+    
+    </form>
+
+
+
+
+  </div>
+
+{% endblock %}
