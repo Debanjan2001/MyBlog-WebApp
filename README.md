@@ -1,6 +1,6 @@
 # MyBlog-WebApp
 
-A small effort by me to create my own blogging application.I would recommend you to view this on PC/Laptop/Desktop for a beautiful experience.
+A small effort by me to create my own blogging application.I would recommend you to view this on your PC/using Desktop view( if using mobile) for a beautiful experience.
 
 
 Hosted on pythonanywhere.com . Check this link: 
