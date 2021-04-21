@@ -44,7 +44,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 
         </div>
         <div class="w3-col m4 w3-hide-small">
-          <span class="w3-padding-large w3-right"><b>Comments</b> <span class="w3-badge">{{ post.comments.count }}</span></span>
+          <span class="w3-padding-large w3-right"><b><a href = "{% url 'blog:all_comments' post.pk %}">Comments</a></b> <span class="w3-badge">{{ post.comments.count }}</span></span>
         
         </div>
       </div>
@@ -53,18 +53,13 @@ and is wrapped around the whole page content, except for the footer in this exam
   <hr>
 	{% endfor %}
 
-<div class="w3-col l2 s12">
-  <p></p>
-</div>
-
-
   
-<div class="pagination">
-    <span class="step-links">
-        {% if page_obj.has_previous %}
-            <a class="btn btn-primary" href="?page=1">&laquo; First Page</a>
-            <a class="btn btn-secondary" href="?page={{ page_obj.previous_page_number }}">Previous Page</a>
-        {% endif %}
+  <div class="pagination">
+      <span class="step-links">
+          {% if page_obj.has_previous %}
+              <a class="btn btn-primary" href="?page=1">&laquo; First Page</a>
+              <a class="btn btn-secondary" href="?page={{ page_obj.previous_page_number }}">Previous Page</a>
+         {% endif %}
 
         <span class="current">
             Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
@@ -75,7 +70,14 @@ and is wrapped around the whole page content, except for the footer in this exam
             <a class="btn btn-primary" href="?page={{ page_obj.paginator.num_pages }}">Last Page &raquo;</a>
         {% endif %}
     </span>
+    </center>
     </div>
+
+<div class="w3-col l2 s12">
+  <p></p>
+</div>
+
+
 <!-- END BLOG ENTRIES -->
 </div>
 

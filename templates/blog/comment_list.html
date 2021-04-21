@@ -1,0 +1,72 @@
+{% extends 'base/base.html' %}
+
+{% load static %}
+
+{% block base %}
+
+
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
+
+
+<!-- Grid -->
+<div class="w3-row">
+
+
+<!-- Introduction menu -->
+<div class="w3-col l2"><p></p></div>
+
+<div class="w3-col l8">
+  
+  <!-- Posts -->
+  <div class="w3-card w3-margin">
+    <div class="w3-container w3-padding">
+      <h4>All Comments</h4>
+    </div>
+    <ul class="w3-ul w3-hoverable w3-white">
+    {% for comment in page_obj %}
+        <li class="w3-padding-16">
+        <span class="w3-medium"><b>Written by:</b> {{ comment.author_name }}</span><br>
+        <span><b>Comment:</b> {{ comment.comment_message }}</span><br>
+        <span><b><a class=" btn btn-danger" href = "{% url 'blog:delete_comment' comment.pk %}">Delete Comment</a></b> </span>
+
+      </li>
+    {% endfor %}
+    </ul>
+  </div>
+  <hr> 
+
+   <div class="pagination">
+      <span class="step-links">
+          {% if page_obj.has_previous %}
+              <a class="btn btn-primary" href="?page=1">&laquo; First Page</a>
+              <a class="btn btn-secondary" href="?page={{ page_obj.previous_page_number }}">Previous Page</a>
+         {% endif %}
+
+        <span class="current">
+            Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+        </span>
+
+        {% if page_obj.has_next %}
+            <a class="btn btn-secondary" href="?page={{ page_obj.next_page_number }}">Next Page</a>
+            <a class="btn btn-primary" href="?page={{ page_obj.paginator.num_pages }}">Last Page &raquo;</a>
+        {% endif %}
+    </span>
+    </center>
+    </div>
+
+<div class="w3-col l2"><p></p></div>
+
+<!-- END Introduction Menu -->
+</div>
+
+<!-- END GRID -->
+</div><br>
+
+<!-- END w3-content -->
+</div>
+
+
+{% endblock %}
+
