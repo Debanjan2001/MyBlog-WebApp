@@ -111,7 +111,7 @@ def CreateCommentView(request, pk):
 def CommentListView(request,pk):
     post = get_object_or_404(Post,pk = pk)
     context = {}
-    paginator = Paginator(post.comments.all(), 5) # Show 5 comments per page.
+    paginator = Paginator(post.comments.all().order_by('created_date').reverse(), 5) # Show 5 comments per page.
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
     context['page_obj'] = page_obj

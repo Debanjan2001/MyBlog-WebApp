@@ -27,7 +27,7 @@ and is wrapped around the whole page content, except for the footer in this exam
     <ul class="w3-ul w3-hoverable w3-white">
     {% for comment in page_obj %}
         <li class="w3-padding-16">
-        <span class="w3-medium"><b>Written by:</b> {{ comment.author_name }}</span><br>
+        <span class="w3-medium"><b>Written by:</b> {{ comment.author_name }} on {{ comment.created_date }}</span><br>
         <span><b>Comment:</b> {{ comment.comment_message }}</span><br>
         <span><b><a class=" btn btn-danger" href = "{% url 'blog:delete_comment' comment.pk %}">Delete Comment</a></b> </span>
 
