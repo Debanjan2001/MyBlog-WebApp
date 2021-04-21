@@ -1,6 +1,6 @@
 # MyBlog-WebApp
 
-#### A small effort by me to create my own blogging application.
+#### A small effort by me to create my own blogging application.I would recommend you to view this on PC/Laptop/Desktop for a beautiful experience.
 
 ## Hosted on pythonanywhere.com . Check this link: 
 
@@ -42,4 +42,4 @@ python manage.py createsuperuser
 
 After all these steps , you can start enjoying this project. 
 
-#### P.S. - It is not perfectly optimised for mobile version but you won't face any major trouble while using the hosted website through mobile 
+#### P.S. - It is not perfectly optimised for mobile version, but you won't face any major trouble while using the hosted website through mobile .
