@@ -1,6 +1,8 @@
 # MyBlog-WebApp
 
-## Hosted on pythonanywhere.com. Click this link: 
+#### A small effort by me to create my own blogging application.
+
+## Hosted on pythonanywhere.com . Check this link: 
 
 ```
 https://debanjan2001.pythonanywhere.com/
