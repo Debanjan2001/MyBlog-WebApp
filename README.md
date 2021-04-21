@@ -43,5 +43,8 @@ python manage.py createsuperuser
 ```
 
 After all these steps , you can start enjoying this project. 
+```
+python manage.py runserver
+```
 
 #### P.S. - It is not perfectly optimised for mobile version, but you won't face any major trouble while using the hosted website through mobile .
