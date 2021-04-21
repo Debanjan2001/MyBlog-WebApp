@@ -3,3 +3,4 @@ static/*
 blog/__pycache__/*
 blog/migration/*
 myblog/__pycache__/*
+db.sqlite3
