@@ -16,10 +16,10 @@ Clone This Project (Make Sure You Have Git Installed)
 git clone https://github.com/Debanjan2001/MyBlog-WebApp.git
 ```
 
-Change your directory to the cloned repo
+Change your directory to the cloned repo's myblog folder
 
 ```
-cd <<Your Download Location Here>>/MyBlog-Webapp
+cd <<Your Download Location Here>>/MyBlog-Webapp/myblog
 ```
 
 Install Dependencies 
