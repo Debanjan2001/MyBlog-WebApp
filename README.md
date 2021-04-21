@@ -27,6 +27,8 @@ Install Dependencies
 ```
 pip install -r requirements.txt
 ```
+Feel free to create your own viirtual environment to manage all the requirements in one place.
+
 
 Set Database (Make Sure you are in directory same as manage.py)
 ```
