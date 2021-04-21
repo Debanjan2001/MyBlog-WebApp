@@ -1,1 +1,5 @@
 venv/*
+static/*
+blog/__pycache__/*
+blog/migration/*
+myblog/__pycache__/*
