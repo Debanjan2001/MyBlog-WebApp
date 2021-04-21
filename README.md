@@ -1,12 +1,23 @@
 # MyBlog-WebApp
 
+## Hosted on pythonanywhere.com. Click this link: 
+
+`https://debanjan2001.pythonanywhere.com/`
+
 ![Demo](https://user-images.githubusercontent.com/56274058/115596567-dfc74d80-a2f5-11eb-8fc1-9975d00bb1c1.gif)
 
 
 Clone This Project (Make Sure You Have Git Installed)
 ```
-https://github.com/mustafamuratcoskun/DjangoBlogApp.git
+git clone https://github.com/Debanjan2001/MyBlog-WebApp.git
 ```
+
+Change your directory to the cloned repo
+
+```
+cd <<Your Download Location Here>>/MyBlog-Webapp
+```
+
 Install Dependencies 
 
 ```
@@ -17,12 +28,14 @@ Set Database (Make Sure you are in directory same as manage.py)
 ```
 python manage.py makemigrations
 python manage.py migrate
+python manage.py makemigrations
 ```
-Create SuperUser 
+
+Create SuperUser to get admin login features
 ```
 python manage.py createsuperuser
 ```
 
-After all these steps , you can start testing and developing this project. 
+After all these steps , you can start enjoying this project. 
 
-#### That's it! Happy Coding!
+#### P.S. - It is not perfectly optimised for mobile version but you wont any major trouble while using the hosted website through mobile 
