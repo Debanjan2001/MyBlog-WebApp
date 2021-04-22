@@ -1,6 +1,6 @@
 # MyBlog-WebApp
 
-A small effort by me to create my own blogging application.I would recommend you to view this on PC/Laptop/Desktop for a beautiful experience.
+A small effort by me to create my own blogging application.I would recommend you to view this on your PC/using Desktop view( if using mobile) for a beautiful experience.
 
 
 Hosted on pythonanywhere.com . Check this link: 
@@ -27,6 +27,8 @@ Install Dependencies
 ```
 pip install -r requirements.txt
 ```
+Feel free to create your own viirtual environment to manage all the requirements in one place.
+
 
 Set Database (Make Sure you are in directory same as manage.py)
 ```
@@ -41,5 +43,8 @@ python manage.py createsuperuser
 ```
 
 After all these steps , you can start enjoying this project. 
+```
+python manage.py runserver
+```
 
 #### P.S. - It is not perfectly optimised for mobile version, but you won't face any major trouble while using the hosted website through mobile .
