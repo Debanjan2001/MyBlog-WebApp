@@ -3,11 +3,10 @@
 A small effort by me to create my own blogging application.I would recommend you to view this on your PC/using Desktop view( if using mobile) for a beautiful experience.
 
 
-Hosted on pythonanywhere.com . Check this link: 
-```
-https://debanjan2001.pythonanywhere.com/
-```
+Hosted on pythonanywhere.com . Check here :  [https://debanjan2001.pythonanywhere.com/](https://debanjan2001.pythonanywhere.com/)
 
+
+### Screenshots of the app
 ![Demo](https://user-images.githubusercontent.com/56274058/115596567-dfc74d80-a2f5-11eb-8fc1-9975d00bb1c1.gif)
 
 
@@ -27,7 +26,7 @@ Install Dependencies
 ```
 pip install -r requirements.txt
 ```
-Feel free to create your own viirtual environment to manage all the requirements in one place.
+Feel free to create your own virtual environment to manage all the requirements in one place.
 
 
 Set Database (Make Sure you are in directory same as manage.py)
